@@ -174,10 +174,6 @@ const Intro = () => {
         <WhyChoose />
       </div>
 
-      <div className="about-company">
-        <AboutCompany />
-      </div>
-
       <div className="services">
         <center style={{ margin: "30px 0px" }}>
           <h1>OFFERINGS SERVICES</h1>
