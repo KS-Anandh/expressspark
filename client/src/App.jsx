@@ -6,6 +6,7 @@ import CopyRights from './components/CopyRights.jsx'
 import AboutUs from './pages/AboutUs.jsx'
 import ForSchool from './components/ForSchool.jsx'
 import NavBar2 from './components/NavBar2.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 const Home = lazy(() => import("./pages/Home.jsx"));
 const AfterSchooling = lazy(() => import("./pages/AfterSchooling.jsx"));
 const ContactUs = lazy(() => import("./pages/ContactUs.jsx"));
@@ -16,6 +17,7 @@ const [navigation,SetNavigation]=useState(0);
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop />
       <NavBar2 navigation={navigation} SetNavigation={SetNavigation}/>
       <NavBar navigation={navigation} SetNavigation={SetNavigation}/>
       <Routes>
