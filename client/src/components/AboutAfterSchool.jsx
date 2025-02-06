@@ -38,7 +38,7 @@ const AboutAfterSchool = () => {
         <ul>
             <li><span className="showcase" style={{color:"rgb(22, 0, 87)"}}>45 Minutes :</span> Communication& Personality Development. Build Communication. Spoken English and Confidence through Structured Activities</li>
             <li><span className="showcase" style={{color:"rgb(131, 0, 59)"}}>45 Minutes :</span> Future Skills Explore, STEM , Robotics,IoT,AR/VR, DIY and Drone Tech through Hands-on Learning</li>
-            <li><span className="showcase" style={{color:"green"}}>1:30 Minutes :</span> Daily Academics Strenghen core subjects with practical kits, IIT JEE & NEET prep, Vedc Maths and Abacus.</li>
+            <li><span className="showcase" style={{color:"green"}}>1:30 Minutes :</span> Daily Academics Strenghen core subjects with practical kits, IIT JEE & NEET prep, Vedic Maths and Abacus.</li>
         </ul>
         <img src={image} alt="" />
       </div>
