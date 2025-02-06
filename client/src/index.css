@@ -1148,8 +1148,13 @@ background-image: linear-gradient(150deg,rgb(255, 151, 65),#ffffff,rgb(77, 255, 
     
     font-size: 25px;
   }
+   .navBar2 ul li{
+    width:60px; 
+    font-size:10px
+}
   .navBar2{
-  font-size:10px;
+    display: block;
+    font-size:10px;
   }
   .services {
     padding:10px 0px;
@@ -1173,6 +1178,7 @@ background-image: linear-gradient(150deg,rgb(255, 151, 65),#ffffff,rgb(77, 255, 
   }
   .right-block img{
     height: 250px;
+    
   }
   .main-banner h3{
     font-size: 25px;
