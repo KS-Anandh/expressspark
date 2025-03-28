@@ -545,7 +545,11 @@ list-style: none;
   flex-direction: column;
   width: 100%;
   background-color: rgb(73, 73, 73);
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/mychoice-5eae5.appspot.com/o/images%2Fimage.jpg?alt=media&token=ff186b17-edc4-4a2b-bedb-540b62f61845');
+  background-image: url('https://img.freepik.com/premium-photo/black-telephone-receiver-hanging-against-gray-background_1048944-30631736.jpg?ga=GA1.1.822356731.1743135953&semt=ais_hybrid');
+background-size: cover; /* Ensures the image covers the entire background */
+background-position: center; /* Centers the background image */
+background-repeat: no-repeat;
+
 }
 .contactForm .contact-info img{
   width: 50px;
