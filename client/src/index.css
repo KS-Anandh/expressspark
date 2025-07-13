@@ -275,6 +275,9 @@ transition:top 1s;
   height: 130px;
   border-radius: 50%;
 }
+.chooseItem p{
+  color:rgb(113,113,116);
+}
 .chooseItem:hover{
   transform:scale(1.1);
 }
