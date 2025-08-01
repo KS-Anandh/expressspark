@@ -13,11 +13,11 @@ const NavBar2 = ({navigation,SetNavigation}) => {
           <img src={logo}  />
           <p>Center Of Robotics </p>
         </div>
-        <div className='menu'>
-          <p>Menu</p>
-          <span onClick={()=>{
+        <div className='menu' onClick={()=>{
             setDropDown((prev)=>!prev)
-          }}> {dropDown?<IoCloseCircle color='white' size={30}/>:<RiMenu2Line color='white' size={25}/>} </span>
+          }}>
+          <p>Menu</p>
+          <span > {dropDown?<IoCloseCircle color='white' size={30}/>:<RiMenu2Line color='white' size={25}/>} </span>
         </div>
         <div className='drop-down-menu' style={{display:dropDown?"flex":"none"}}>
            <ul >
