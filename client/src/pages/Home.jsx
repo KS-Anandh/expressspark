@@ -7,8 +7,7 @@ const Home = () => {
   
   return (
     <div className='home' >
-       <Intro/>
-      
+       <Intro/>  
     </div>
   )
 }

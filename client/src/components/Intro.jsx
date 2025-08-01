@@ -87,19 +87,23 @@ const Intro = () => {
                   TRANSFORMING EDUCATION WITH STEAM LEARNING
                 </h3>
                 <p>
-                  <span
+                   <span
                     style={{
                       marginLeft: "30px",
                       color: "yellow",
                       fontWeight: "600",
-                      fontSize: "23px",
+                      fontSize: "20px",
                     }}
                   >
                     We are{" "}
                   </span>
-                  excited to introduce ExpressSpark, a forward-thinking
-                </p>
-                <p>
+                  excited to introduce <span
+                    style={{
+                      color: "orangered",
+                      fontWeight: "800",
+                      fontSize: "17px",
+                    }}
+                  >ExpressSpark </span>, a forward-thinking
                   initiative designed to seamlessly integrate cutting-edge
                   technologies and STEAM (Science, Technology, Engineering,
                   Arts, and Mathematics) learning into school curriculums. In

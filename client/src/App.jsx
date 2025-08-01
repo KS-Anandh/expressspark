@@ -4,7 +4,7 @@ import NavBar from './components/NavBar.jsx'
 import Footer from './components/Footer.jsx'
 import CopyRights from './components/CopyRights.jsx'
 import AboutUs from './pages/AboutUs.jsx'
-import ForSchool from './components/ForSchool.jsx'
+import ForSchool from './pages/ForSchool.jsx'
 import NavBar2 from './components/NavBar2.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 const Home = lazy(() => import("./pages/Home.jsx"));

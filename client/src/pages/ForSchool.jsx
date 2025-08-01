@@ -45,7 +45,7 @@ function ForSchool() {
             <span style={{color:"orangered",fontWeight:"700",fontSize:"21px"}}>Bringing Future-Ready Education</span> to Your Institution. At
             ExpressSpark, we seamlessly integrate cutting-edge STEAM education
             (Science, Technology, Engineering, Arts, and Mathematics) into
-            school curriculums—without adding extra workload to your staff.
+            school curriculums without adding extra workload to your staff.
           </p>
         </div>
       
@@ -62,19 +62,7 @@ function ForSchool() {
                 <li>3D Printing</li>
                 <li>DIY</li>
               </ul>
-              <div className="courses-text">
-                <p>
-                  <span
-                    className="oranged"
-                    style={{ fontWeight: "700", marginLeft: "50px" }}
-                  >
-                    Each{" "}
-                  </span>
-                  subject is taught through dedicated, engaging sessions led by
-                  professional trainers, impressing both students and parents
-                  while preparing students for future careers.
-                </p>
-              </div>
+
             </div>
             <div className="right-block">
               <img src={CoursesPicture} alt="Courses Representation" />
