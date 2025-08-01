@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import logo from '../assets/images/logo.png'
 import { Link } from 'react-router-dom'
+import { RiMenu2Line } from "react-icons/ri";
+import { IoCloseCircle } from "react-icons/io5";
+
 const NavBar2 = ({navigation,SetNavigation}) => {
 
   const [dropDown,setDropDown]=useState(false);
@@ -11,9 +14,10 @@ const NavBar2 = ({navigation,SetNavigation}) => {
           <p>Center Of Robotics </p>
         </div>
         <div className='menu'>
-          <p onClick={()=>{
+          <p>Menu</p>
+          <span onClick={()=>{
             setDropDown((prev)=>!prev)
-          }}> {dropDown?"X":"="} </p>
+          }}> {dropDown?<IoCloseCircle color='white' size={30}/>:<RiMenu2Line color='white' size={25}/>} </span>
         </div>
         <div className='drop-down-menu' style={{display:dropDown?"flex":"none"}}>
            <ul >
