@@ -10,6 +10,8 @@ import offordable from "../assets/images/affordable.jpg";
 import marketing from "../assets/images/market.png";
 import {motion} from 'framer-motion'
 import { useState } from "react";
+import { Helmet } from "react-helmet";
+
 function ForSchool() {
     const [name,setName]=useState(null);
     const [mail,setMail]=useState(null);
@@ -27,6 +29,34 @@ function ForSchool() {
       window.open(whatsappURL, "_blank");
     }
     return(
+      <>
+      <Helmet>
+        <title>For Schools – Learn Robotics, Coding & STEM</title>
+        <meta
+          name="description"
+          content="Express Spark provides hands-on Robotics, Coding, and STEM education for students. Join our school programs, test series, and workshops."
+        />
+        <meta property="og:title" content="For Schools – Robotics & STEM for Students" />
+        <meta
+          property="og:description"
+          content="Join Express Spark for cutting-edge learning in Robotics, Coding, IoT and more – from school to real-world skills."
+        />
+        <meta property="og:url" content="https://www.expressspark.in" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.atlantaparent.com/wp-content/uploads/2018/01/iStock-653876434.jpg" />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Express Spark",
+              "url": "https://www.expressspark.in",
+              "alternateName": "ExpressSpark"
+            }
+          `}
+        </script>
+      </Helmet>
     <div className="ForSchool">
       <div className="container">
           <motion.div
@@ -336,6 +366,7 @@ function ForSchool() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
