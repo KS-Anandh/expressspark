@@ -1038,11 +1038,326 @@ background-image: linear-gradient(150deg,rgb(255, 220, 191),#cee9cc,rgb(255, 202
 }
 .navBar2 .header img{
    width:90px;
-  
    margin-left:20px;
    margin-top: 5px;
-
 }
+
+.attendance-container {
+
+  width: 100%;
+  margin: 40px 0px;
+  padding: 100px 0px;
+}
+
+.profile-card,
+.location-card,
+.attendance-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px;
+ 
+  text-align: center;
+}
+.profile-card,
+.location-card{
+ min-width:350px;
+}
+.profile-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap:10px;
+}
+.profile-card .logout{
+  padding: 5px 10px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-card h3 {
+  margin: 10px 0 5px;
+  font-size: 22px;
+  color: #333;
+}
+
+.profile-card p {
+  margin: 4px 0;
+  color: #666;
+}
+
+.location-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 15px;
+
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.location-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.location-left h3,
+.location-right h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.location-left p,
+.location-right p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.refresh-btn {
+  padding: 6px 12px;
+  border: none;
+  background: #0078ff;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.refresh-btn:hover {
+  background: #005fcc;
+}
+
+.attendance-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.checkin-btn,
+.checkout-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.checkin-btn {
+  background: #28a745;
+  color: #fff;
+}
+
+.checkin-btn:hover {
+  background: #218838;
+}
+
+.checkout-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.checkout-btn:hover {
+  background: #c82333;
+}
+
+.inside {
+  color: green;
+  font-weight: bold;
+}
+
+.outside {
+  color: red;
+  font-weight: bold;
+}
+
+
+.attendance-card h3 {
+  margin-bottom: 15px;
+}
+
+.attendance-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attendance-card li {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  transition: 0.2s;
+}
+
+.attendance-card li.present {
+  border-left: 6px solid #4caf50;
+}
+
+.attendance-card li.absent {
+  border-left: 6px solid #e53935;
+  background: #ffecec;
+}
+
+.attendance-card li:hover {
+  transform: scale(1.02);
+  background: #fff;
+}
+.attendance-firstRow{
+  padding: 30px 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ column-gap: 30px;
+   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+}
+.EmployeeLogin {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card {
+  background: #fff;
+  padding: 2rem;
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #4e73df;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #4e73df;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #3751c7;
+}
+.pagination-btns{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+.pagination-btns button{
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 301px) and (max-width:1100px) {
   .navBar2 ul li{
   width:120px; 
@@ -1297,7 +1612,12 @@ transition:top 1s;
   font-size: 25px;
   color: rgb(131, 225, 0);
 }
-
+.attendance-container{
+  padding: 0px;
+}
+.EmployeeLogin {
+  height: 80vh;
+}
 }
 @media (min-width: 301px) and (max-width:380px){
   .services h1{

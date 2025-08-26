@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
@@ -34,6 +35,8 @@ const Footer = () => {
           <ul>
             <li><a href="https://iotap.vercel.app" target="_blank">IOTAP</a></li>
             <li><a href="https://theexpresssparkacademy.com/" target="_blank">The ExpressSpark Acadamy</a></li>
+            <li><Link to="/EmployeeLogin">Employee Portal</Link></li>
+            <li><Link to="/EmployeeLogin">Admin Portal</Link></li>
           </ul>
         </div>
       </div>
