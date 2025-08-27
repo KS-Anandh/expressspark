@@ -16,7 +16,7 @@ const EmployeeAttendance = () => {
       const userId = localStorage.getItem("userId");
       if (!userId) throw new Error("User ID not found in localStorage");
       const response = await axios.get(
-        `http://localhost:9800/user/users/${userId}`
+        `https://expressspark-server.vercel.app/user/users/${userId}`
       );
       setUser(response.data);
     } catch (error) {
@@ -34,7 +34,7 @@ const EmployeeAttendance = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:9800/attendance/checkin",
+        "https://expressspark-server.vercel.app/attendance/checkin",
         {
           userId,
           location,
@@ -53,7 +53,7 @@ const EmployeeAttendance = () => {
   const handleCheckout = async (userId) => {
     try {
       const response = await axios.post(
-        "http://localhost:9800/attendance/checkout",
+        "https://expressspark-server.vercel.app/attendance/checkout",
         {
           userId: userId,
         }
@@ -80,7 +80,7 @@ const EmployeeAttendance = () => {
     console.log({ year, month, userId });
     try {
       const response = await axios.get(
-        `http://localhost:9800/attendance/report/${userId}/${year}/${month}`
+        `https://expressspark-server.vercel.app/attendance/report/${userId}/${year}/${month}`
       );
       setAttendanceHistory(response.data.dailyRecords);
     } catch (err) {
