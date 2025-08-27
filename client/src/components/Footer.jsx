@@ -36,7 +36,6 @@ const Footer = () => {
             <li><a href="https://iotap.vercel.app" target="_blank">IOTAP</a></li>
             <li><a href="https://theexpresssparkacademy.com/" target="_blank">The ExpressSpark Acadamy</a></li>
             <li><Link to="/EmployeeLogin">Employee Portal</Link></li>
-            <li><Link to="/EmployeeLogin">Admin Portal</Link></li>
           </ul>
         </div>
       </div>
