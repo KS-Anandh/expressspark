@@ -51,6 +51,9 @@ const EmployeeAttendance = () => {
   };
 
   const handleCheckout = async (userId) => {
+      if (location === "Outside allowed area") {
+      return alert("Your are in out of the School");
+    }
     try {
       const response = await axios.post(
         "https://expressspark-server.vercel.app/attendance/checkout",
